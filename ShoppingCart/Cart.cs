@@ -1,12 +1,14 @@
 ﻿namespace ShoppingCart
 {
+    using System.Collections.Generic;
+
     public interface ICart
     {
-        string[] Items { get; set; }
+        IEnumerable<string> Items { get; set; }
     }
 
     public class Cart : ICart
     {
-        public string[] Items { get; set; }
+        public IEnumerable<string> Items { get; set; }
     }
 }
