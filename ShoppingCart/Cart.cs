@@ -1,6 +1,11 @@
 ﻿namespace ShoppingCart
 {
-    public class Cart
+    public interface ICart
+    {
+        string[] Items { get; set; }
+    }
+
+    public class Cart : ICart
     {
         public string[] Items { get; set; }
     }

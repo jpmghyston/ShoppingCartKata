@@ -2,11 +2,16 @@
 {
     using System;
 
-    public class PriceCalculator
+    public interface IPriceCalculator
     {
-        private readonly Cart cart;
+        int CalculatePrice();
+    }
 
-        public PriceCalculator(Cart cart)
+    public class PriceCalculator : IPriceCalculator
+    {
+        private readonly ICart cart;
+
+        public PriceCalculator(ICart cart)
         {
             this.cart = cart;
         }
