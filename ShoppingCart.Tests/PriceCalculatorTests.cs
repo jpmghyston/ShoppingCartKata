@@ -21,13 +21,13 @@
         [Test]
         public void Empty_cart_should_cost_nothing()
         {
-            // Arrange
+            // Given
             A.CallTo(() => cart.Items).Returns(Enumerable.Empty<string>());
 
-            // Act
+            // When
             var price = calculator.CalculatePrice();
 
-            // Assert
+            // Then
             price.Should().Be(0);
         }
     }
