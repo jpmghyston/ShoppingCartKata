@@ -58,6 +58,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppingCart\ShoppingCart.csproj">
+      <Project>{5EA8B5B2-7965-484A-82A5-5482422503BC}</Project>
+      <Name>ShoppingCart</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
