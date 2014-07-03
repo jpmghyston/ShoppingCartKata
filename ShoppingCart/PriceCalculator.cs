@@ -4,7 +4,14 @@
 
     public class PriceCalculator
     {
-        public int CalculatePrice(Cart cart)
+        private readonly Cart cart;
+
+        public PriceCalculator(Cart cart)
+        {
+            this.cart = cart;
+        }
+
+        public int CalculatePrice()
         {
             throw new NotImplementedException();
         }

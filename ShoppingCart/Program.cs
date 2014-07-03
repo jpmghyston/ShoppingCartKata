@@ -6,12 +6,12 @@
     {
         public static void Main()
         {
-            var priceCalculator = new PriceCalculator();
 
             Console.WriteLine("What would you like to buy?");
             var items = Console.ReadLine() ?? "";
             var cart = new Cart { Items = items.Split(',') };
-            var price = priceCalculator.CalculatePrice(cart);
+            var priceCalculator = new PriceCalculator(cart);
+            var price = priceCalculator.CalculatePrice();
             Console.WriteLine("That will cost you {0}.", price);
         }
     }
