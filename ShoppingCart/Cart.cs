@@ -1,12 +1,7 @@
 ﻿namespace ShoppingCart
 {
-    using System;
-
     public class Cart
     {
-        public Cart(string[] items)
-        {
-            throw new NotImplementedException();
-        }
+        public string[] Items { get; set; }
     }
 }
